@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29503.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DIT.Portal", "DIT.Portal\DIT.Portal.csproj", "{CCD3A84B-7089-4B17-84A8-3336F5141D70}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DIT.Domain", "DIT.Domain\DIT.Domain.csproj", "{776B2587-71B6-4418-90D0-71E825E07069}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DIT.API", "DIT.API\DIT.API.csproj", "{F58EB5E5-19FF-4D96-A185-5142F7BEC9C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIT.Integration", "DIT.Integration\DIT.Integration.csproj", "{DD1356AD-9F26-4A51-868C-EEF7ABFC96E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DIT.Integration", "DIT.Integration\DIT.Integration.csproj", "{DD1356AD-9F26-4A51-868C-EEF7ABFC96E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIT.Tests", "DIT.Tests\DIT.Tests.csproj", "{02B4CA6C-6CB7-42E6-A814-21BE5D2EFFD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DIT.Tests", "DIT.Tests\DIT.Tests.csproj", "{02B4CA6C-6CB7-42E6-A814-21BE5D2EFFD4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DIT.Portal", "DIT.Portal2\DIT.Portal.csproj", "{BFA269E3-B292-456E-ADC5-A8910BF58D65}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CCD3A84B-7089-4B17-84A8-3336F5141D70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CCD3A84B-7089-4B17-84A8-3336F5141D70}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CCD3A84B-7089-4B17-84A8-3336F5141D70}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CCD3A84B-7089-4B17-84A8-3336F5141D70}.Release|Any CPU.Build.0 = Release|Any CPU
 		{776B2587-71B6-4418-90D0-71E825E07069}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{776B2587-71B6-4418-90D0-71E825E07069}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{776B2587-71B6-4418-90D0-71E825E07069}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +35,10 @@ Global
 		{02B4CA6C-6CB7-42E6-A814-21BE5D2EFFD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02B4CA6C-6CB7-42E6-A814-21BE5D2EFFD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02B4CA6C-6CB7-42E6-A814-21BE5D2EFFD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFA269E3-B292-456E-ADC5-A8910BF58D65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFA269E3-B292-456E-ADC5-A8910BF58D65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFA269E3-B292-456E-ADC5-A8910BF58D65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFA269E3-B292-456E-ADC5-A8910BF58D65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

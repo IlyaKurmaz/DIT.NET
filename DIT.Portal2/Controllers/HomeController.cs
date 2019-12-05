@@ -5,21 +5,25 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using DIT.Portal.Models;
+using DIT.Portal2.Models;
+using DIT.Domain.Context;
 
-namespace DIT.Portal.Controllers
+namespace DIT.Portal2.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly DitContext _ditContext;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, DitContext ditContext)
         {
             _logger = logger;
+            _ditContext = ditContext;
         }
 
         public IActionResult Index()
         {
+            var a = _ditContext.Users.ToList();
             return View();
         }
 

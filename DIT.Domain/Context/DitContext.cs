@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using DIT.Domain.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace DIT.Domain.Context
 {
@@ -17,5 +18,16 @@ namespace DIT.Domain.Context
 
             base.OnModelCreating(builder);
         }
+
+        public DbSet<Organization> Organizations { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Project> Projects { get; set; }
+        public DbSet<Connector> Connectors { get; set; }
+        public DbSet<ProjectConnector> ProjectConnectors { get; set; }
+        public DbSet<Process> Processes { get; set; }
+        public DbSet<ProcessContent> ProcessContents { get; set; }
+        public DbSet<Flow> Flows { get; set; }
+        public DbSet<FlowContent> FlowContents { get; set; }
+
     }
 }

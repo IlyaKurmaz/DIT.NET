@@ -1,6 +1,6 @@
 using System;
 
-namespace DIT.Portal.Models
+namespace DIT.Portal2.Models
 {
     public class ErrorViewModel
     {

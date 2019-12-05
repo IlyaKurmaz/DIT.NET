@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace DIT.Portal.Extentions
+namespace DIT.Portal2.Extentions
 {
     public static class ServiceCollectionExtensions
     {
