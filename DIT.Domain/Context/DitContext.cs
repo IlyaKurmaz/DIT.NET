@@ -1,9 +1,10 @@
 ﻿using DIT.Domain.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace DIT.Domain.Context
 {
-    public sealed class DitContext : DbContext
+    public sealed class DitContext : IdentityDbContext<User>
     {
         private static readonly string defaultSchema = "dit";
 
@@ -21,6 +22,8 @@ namespace DIT.Domain.Context
 
         public DbSet<Organization> Organizations { get; set; }
         public DbSet<User> Users { get; set; }
+
+        public DbSet<RefreshToken> RefreshTokens { get; set; }
         public DbSet<Project> Projects { get; set; }
         public DbSet<Connector> Connectors { get; set; }
         public DbSet<ProjectConnector> ProjectConnectors { get; set; }

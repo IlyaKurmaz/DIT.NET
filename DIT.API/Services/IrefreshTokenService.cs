@@ -1,0 +1,14 @@
+﻿using DIT.Domain;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace DIT.API.Services
+{
+    public interface IRefreshTokenService
+    {
+        Task<RefreshToken> getRefreshToken(string refreshToken);
+
+    }
+}
