@@ -10,6 +10,5 @@ namespace DIT.Domain.Models
         public string Name { get; set; }
 
         public FlowContent FlowContent { get; set; }
-
     }
 }

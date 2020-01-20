@@ -1,6 +1,4 @@
-﻿using DIT.Domain.Interfaces;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Identity;
 
 namespace DIT.Domain.Models
